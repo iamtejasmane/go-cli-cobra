@@ -6,12 +6,14 @@ package cmd
 import (
 	"os"
 
+	"github.com/iamtejasmane/go-cli-cobra/cmd/info"
 	"github.com/iamtejasmane/go-cli-cobra/cmd/net"
 	"github.com/spf13/cobra"
 )
 
 func addSubcommandPalettes() {
 	rootCmd.AddCommand(net.NetCmd)
+	rootCmd.AddCommand(info.InfoCmd)
 }
 
 // rootCmd represents the base command when called without any subcommands
